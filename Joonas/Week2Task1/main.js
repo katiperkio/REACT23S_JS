@@ -157,7 +157,7 @@ console.log(`The smallest number you gave is ${Math.min.apply(null, nums)}`) */
 // 9.  Make a program that asks ten numbers and in the end prints out two
 //     biggest numbers.
 
-const nums = [];
+/* const nums = [];
 let number;
 
 for (let i = 0; i < 10; i++) {
@@ -167,7 +167,23 @@ nums.push(number);
 
 nums.sort(function(a, b){return b - a});
 
-console.log(`Two biggest numbers from the numbers you gave are ${nums[0]} and ${nums[1]}`);
+console.log(`Two biggest numbers from the numbers you gave are ${nums[0]} and ${nums[1]}`); */
 
 // 10. Make a program that asks ten numbers. Program calculates and prints out
 //     sum and average, also prints out the smallest and biggest number.
+
+let number = 0;
+let sum = 0;
+let amount = 0;
+const nums = [];
+
+for (let i = 0; i < 10; i ++) {
+    number = parseInt(prompt('Please give a number'));
+    sum += number;
+    amount++;
+    nums.push(number);
+}
+
+nums.sort(function(a, b) {return a - b});
+console.log(`The sum of the numbers is ${sum} and the average is ${sum/amount}`);
+console.log(`The smallest number is ${nums[0]} and biggest is ${nums[9]}`);
