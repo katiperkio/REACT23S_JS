@@ -1,0 +1,11 @@
+body {
+  background-image: linear-gradient(to right, #c43bdc, rgb(59, 0, 234));
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 600px;
+  border-radius: 5%;
+  opacity: 0.85;
+}

@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(218, 145, 85);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: 30px;
+}
