@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(79, 20, 35);
+  font-family: "Verdana", sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+}
+
+div {
+  margin: 15px 0;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: rgb(12, 84, 78);
+  border: none;
+  padding: 8px 25px;
+  color: white;
+  border-radius: 3px;
+  margin: 15px 8px;
+  opacity: 0.8;
+  transition: 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+  background-color: rgb(16, 91, 83);
+}
