@@ -1,48 +1,47 @@
-const userName = prompt('What is your name?');
-//const userName = 'Kati';
-
+const getUserName = () => {
+let userName = document.querySelector('#userName').value;
 if (userName.length === 0) {
-    console.log('Hello');
+   greeting.textContent = 'Hello';
 } else {
-    console.log(`Hello, ${userName}`);
+    greeting.textContent = `Hello, ${userName}`;
+}
 }
 
-const userQuestion = prompt('What is the wisdom you seek?');
-//const userQuestion = 'Should I take a nap?'
-let decisionStatements = '';
-const randomNumber = Math.floor(Math.random() * 10) + 1;
-
-switch (randomNumber) {
-    case 1:
-        decisionStatements = 'The stars say yes, go for it!';
-        break;
-    case 2:
-        decisionStatements = 'Trust your instincts and take the leap.';
-        break;
-    case 3:
-        decisionStatements = 'Hmm, better try again later.';
-        break;
-    case 4:
-        decisionStatements = 'Consider all options before making a move.';
-        break;
-    case 5:
-        decisionStatements = 'The outlook is bright, proceed with confidence.';
-        break;
-    case 6:
-        decisionStatements = 'Seek advice drom a trusted friend before deciding.';
-        break;
-    case 7:
-        decisionStatements = 'Signs point to unexpected opportunities.';
-        break;
-    case 8:
-        decisionStatements = 'It is a toss-up, make a choice and see what happens.';
-        break;
-    case 9:
-        decisionStatements = 'Take a step back and reassess before moving forward.';
-        break;
-    case 10:
-        decisionStatements = 'Not the right time, patience will bring better results.';
-        break;
+const getAnswer = () => {
+    const answer = document.querySelector('#question');
+    let decisionStatements = '';
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    switch (randomNumber) {
+        case 1:
+            decisionStatements = 'Look within, and you shall find the answer you seek.';
+            break;
+        case 2:
+            decisionStatements = 'Trust your instincts, for they hold the truth you desire.';
+            break;
+        case 3:
+            decisionStatements = 'Your question is a key that unlocks the door to knowledge.';
+            break;
+        case 4:
+            decisionStatements = 'Answers hide in plain sight, waiting for your gaze.';
+            break;
+        case 5:
+            decisionStatements = 'Advice from a kindred spirit may bring clarity.';
+            break;
+        case 6:
+            decisionStatements = `Whispers of fate echo with a resounding 'yes'.`;
+            break;
+        case 7:
+            decisionStatements = 'The waters reflect a positive response this time.';
+            break;
+        case 8:
+            decisionStatements = 'Patience, like a lantern, guides you to the answer.';
+            break;
+        case 9:
+            decisionStatements = 'Guided by stars, destiny advises against it.';
+            break;
+        case 10:
+            decisionStatements = 'As dawn reveals, the answer carries a negative tone.';
+            break;
+    }
+    wisdom.textContent = decisionStatements;
 }
-
-console.log(decisionStatements);
