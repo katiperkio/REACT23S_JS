@@ -8,9 +8,12 @@ if (userName.length === 0) {
 }
 
 const getAnswer = () => {
-    const answer = document.querySelector('#question');
-    let decisionStatements = '';
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    let question = document.querySelector('#question').value;
+    if (question.length === 0){
+        wisdom.textContent = 'I can not answer, for I do not hear a question.'
+    } else {
+        let decisionStatements = '';
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
     switch (randomNumber) {
         case 1:
             decisionStatements = 'Look within, and you shall find the answer you seek.';
@@ -44,4 +47,5 @@ const getAnswer = () => {
             break;
     }
     wisdom.textContent = decisionStatements;
+}
 }
