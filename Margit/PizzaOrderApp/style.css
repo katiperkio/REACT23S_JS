@@ -5,23 +5,74 @@
 }
 
 body {
-  font-family: "Gill Sans MT", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80);
+  background-size: cover;
+  background-position: absolute;
+  color: #333;
 }
 
-#orderName,
+#container {
+  margin: 50px auto;
+  width: 300px;
+  line-height: 20px;
+  text-align: left;
+  display: block;
+  background: white;
+  border-radius: 5px;
+  padding: 25px 25px;
+  font-size: 12px;
+}
+
 #orderSize,
 #orderToppings,
+#orderExtra,
 #orderDelivery {
-  margin: 10px 0;
-  line-height: 20px;
+  margin-top: 10px;
 }
 
 #orderName input,
 #orderDelivery select {
   padding: 5px 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  border: solid 0.1px #6e6e6e;
+  border-radius: 2px;
+  color: #333;
+}
+
+#orderName input:focus,
+#orderDelivery select:focus {
+  border-color: chocolate;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+#orderName button {
+  padding: 5px 5px;
+  margin-left: 2px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  color: #333;
+  background: #dedede;
+}
+
+#orderName button:hover {
+  background: chocolate;
+  color: #dedede;
 }
 
 #orderSize label,
-#orderToppings label {
-  margin-right: 10px;
+#orderToppings label,
+#orderExtra label {
+  margin-left: 5px;
+}
+
+#orderSize input,
+#orderToppings input,
+#orderExtra input {
+  transform: scale(1.1);
+  accent-color: chocolate;
 }

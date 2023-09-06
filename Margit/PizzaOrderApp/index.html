@@ -3,146 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Pizza Magic</title>
   </head>
   <body>
-    <div id="orderName">
-      <form>
-        <p class="inputTitle">Please enter your name</p>
-        <input
-          type="text"
-          name="customerName"
-          id="customerName"
-          placeholder="Enter your name"
-        />
-      </form>
-    </div>
-    <div id="orderSize">
-      <form>
-        <p class="inputTitle">Select pizza size in servings</p>
-        <label for="servings2">2</label
-        ><input type="radio" name="pizzaSize" id="servings2" value="2" /><br />
-        <label for="servings4">4</label
-        ><input type="radio" name="pizzaSize" id="servings4" value="4" /><br />
-        <label for="servings6">6</label
-        ><input type="radio" name="pizzaSize" id="servings6" value="6" /><br />
-        <label for="servings8">8</label
-        ><input type="radio" name="pizzaSize" id="servings8" value="8" />
-      </form>
-    </div>
-    <div id="orderToppings">
-      <form>
-        <p class="inputTitle">Select pizza toppings</p>
-        <label for="toppings1">Ham</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings1"
-          value="Ham"
-        /><br />
-        <label for="toppings2">Pineapple</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings2"
-          value="Pineapple"
-        /><br />
-        <label for="toppings3">Mozzarella</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings3"
-          value="Mozzarella"
-        /><br />
-        <label for="toppings4">Minced Beef</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings4"
-          value="Minced Beef"
-        /><br />
-        <label for="toppings5">Mushrooms</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings5"
-          value="Mushrooms"
-        /><br />
-        <label for="toppings6">Red Onion</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings6"
-          value="Red Onion"
-        /><br />
-        <label for="toppings7">Tomatoes</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings7"
-          value="Tomatoes"
-        /><br />
-        <label for="toppings8">Tuna</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings8"
-          value="Tuna"
-        /><br />
-        <label for="toppings9">Bell Pepper</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings9"
-          value="Bell Pepper"
-        /><br />
-        <label for="toppings10">Chicken</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings10"
-          value="Chicken"
-        /><br />
-        <label for="toppings11">Blue Cheese</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings11"
-          value="Blue Cheese"
-        /><br />
-        <label for="toppings12">Fresh Basil</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings12"
-          value="Fresh Basil"
-        /><br />
-        <label for="toppings13">Salami</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings13"
-          value="Salami"
-        /><br />
-        <label for="toppings14">Kebab</label
-        ><input
-          type="checkbox"
-          name="pizzaToppings"
-          id="toppings14"
-          value="Kebab"
-        />
-      </form>
-    </div>
-    <div id="orderDelivery">
-      <form>
-        <p class="inputTitle">Select delivery option</p>
-        <select id="deliveryOptions" name="deliveryOptions">
-          <option value="homeDelivery">Home delivery +5€</option>
-          <option value="eatIn">Eat in</option>
-          <option value="pickup">Pickup</option>
-        </select>
-      </form>
+    <div id="container">
+      <div id="orderName">
+        <form>
+          <p class="inputTitle">Please enter your name</p>
+          <input
+            type="text"
+            name="customerName"
+            id="customerName"
+            placeholder="Enter your name"
+          />
+          <button>Submit</button>
+        </form>
+      </div>
+      <div id="orderSize">
+        <form>
+          <p class="inputTitle">Select pizza size in servings</p>
+          <input type="radio" name="pizzaSize" id="servings2" value="2" />
+          <label for="servings2">2</label>
+          <br />
+          <input type="radio" name="pizzaSize" id="servings4" value="4" />
+          <label for="servings4">4</label>
+          <br />
+          <input type="radio" name="pizzaSize" id="servings6" value="6" />
+          <label for="servings6">6</label>
+          <br />
+          <input type="radio" name="pizzaSize" id="servings8" value="8" />
+          <label for="servings8">8</label>
+        </form>
+      </div>
+      <div id="orderToppings">
+        <form>
+          <p class="inputTitle">Select pizza toppings</p>
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings1"
+            value="Ham"
+          />
+          <label for="toppings1">Ham</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings2"
+            value="Pineapple"
+          />
+          <label for="toppings2">Pineapple</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings3"
+            value="Mozzarella"
+          />
+          <label for="toppings3">Mozzarella</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings4"
+            value="Minced Beef"
+          />
+          <label for="toppings4">Minced Beef</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings5"
+            value="Mushrooms"
+          />
+          <label for="toppings5">Mushrooms</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings6"
+            value="Red Onion"
+          />
+          <label for="toppings6">Red Onion</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings7"
+            value="Tomatoes"
+          />
+          <label for="toppings7">Tomatoes</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings8"
+            value="Tuna"
+          />
+          <label for="toppings8">Tuna</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings9"
+            value="Bell Pepper"
+          />
+          <label for="toppings9">Bell Pepper</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings10"
+            value="Chicken"
+          />
+          <label for="toppings10">Chicken</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings11"
+            value="Blue Cheese"
+          />
+          <label for="toppings11">Blue Cheese</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings12"
+            value="Fresh Basil"
+          />
+          <label for="toppings12">Fresh Basil</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings13"
+            value="Salami"
+          />
+          <label for="toppings13">Salami</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings14"
+            value="Kebab"
+          />
+          <label for="toppings14">Kebab</label>
+        </form>
+      </div>
+      <div id="orderExtra">
+        <form>
+          <p class="inputTitle">Select free extra toppings</p>
+          <input
+            type="checkbox"
+            name="extraToppings"
+            id="extra1"
+            value="oregano"
+          />
+          <label for="extra1">Oregano</label>
+          <br />
+          <input
+            type="checkbox"
+            name="extraToppings"
+            id="extra2"
+            value="garlic"
+          />
+          <label for="extra2">Garlic</label>
+        </form>
+      </div>
+      <div id="orderDelivery">
+        <form>
+          <p class="inputTitle">Select delivery option</p>
+          <select id="deliveryOptions" name="deliveryOptions">
+            <option value="homeDelivery">Home delivery +5€</option>
+            <option value="eatIn">Eat in</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </form>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
