@@ -10,7 +10,7 @@ const getCustomerName = () => {
 const getTotalSum = () => {
     let totalSum = 0, sumToppings = 0, toppingCount = 0;
     const sizeNodeList = document.querySelectorAll('input[type=radio]:checked');
-    const toppingsNodeList = document.querySelectorAll('input[type=checkbox]:checked');
+    const toppingsNodeList = document.querySelectorAll('input[name="pizzaToppings"]:checked');
     const deliveryNodeList = document.querySelectorAll('select');
 
     for (let i = 0; i < sizeNodeList.length; i++) {
