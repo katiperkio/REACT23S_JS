@@ -1,11 +1,11 @@
-const getUserName = () => {
+/* const getUserName = () => {
 let userName = document.querySelector('#userName').value;
 if (userName.length === 0) {
    greeting.textContent = 'Hello';
 } else {
     greeting.textContent = `Hello, ${userName}`;
 }
-}
+} */
 
 const getAnswer = () => {
     let question = document.querySelector('#question').value;
