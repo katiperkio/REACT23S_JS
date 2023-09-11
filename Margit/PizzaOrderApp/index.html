@@ -23,11 +23,14 @@
             id="customerName"
             placeholder="Enter your name"
           />
-          <button>Submit</button>
+          <button type="button" onclick="getCustomerName()">Submit</button>
         </form>
+        <div id="greeting">
+        <p id="nameSubmit"></p>
+    </div>
       </div>
       <div id="orderSize">
-        <form>
+        <form onchange="getTotalSum()">
           <p class="inputTitle">Select pizza size in servings</p>
           <input type="radio" name="pizzaSize" id="servings2" value="2" />
           <label for="servings2">2</label>
@@ -43,7 +46,7 @@
         </form>
       </div>
       <div id="orderToppings">
-        <form>
+        <form onchange="getTotalSum()">
           <p class="inputTitle">Select pizza toppings</p>
           <input
             type="checkbox"
@@ -159,7 +162,7 @@
         </form>
       </div>
       <div id="orderExtra">
-        <form>
+        <form onchange="getTotalSum()">
           <p class="inputTitle">Select free extra toppings</p>
           <input
             type="checkbox"
@@ -179,7 +182,7 @@
         </form>
       </div>
       <div id="orderDelivery">
-        <form>
+        <form onchange="getTotalSum()">
           <p class="inputTitle">Select delivery option</p>
           <select id="deliveryOptions" name="deliveryOptions">
             <option value="homeDelivery">Home delivery +5€</option>
@@ -188,6 +191,8 @@
           </select>
         </form>
       </div>
+      <div id="orderPrice">
+        <p id="sumTotal"></p>
     </div>
     <script src="main.js"></script>
   </body>

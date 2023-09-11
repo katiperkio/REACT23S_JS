@@ -36,19 +36,19 @@ body {
   padding: 5px 5px;
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
-  border: solid 0.1px #6e6e6e;
+  border: solid 0.1px #aeaeae;
   border-radius: 2px;
   color: #333;
 }
 
 #orderName input:focus,
 #orderDelivery select:focus {
-  border-color: chocolate;
+  border-color: #5e5e5e;
   box-shadow: none;
   outline: 0 none;
 }
 
-#orderName button {
+button {
   padding: 5px 5px;
   margin-left: 2px;
   font-family: "Quicksand", sans-serif;
@@ -56,12 +56,11 @@ body {
   border: none;
   border-radius: 2px;
   color: #333;
-  background: #dedede;
+  background: #eeeeee;
 }
 
-#orderName button:hover {
-  background: chocolate;
-  color: #dedede;
+button:hover {
+  background: #dedede;
 }
 
 #orderSize label,
@@ -75,4 +74,12 @@ body {
 #orderExtra input {
   transform: scale(1.1);
   accent-color: chocolate;
+}
+
+#greeting {
+  margin-top: 5px;
+}
+
+#sumTotal {
+  margin-top: 15px;
 }
