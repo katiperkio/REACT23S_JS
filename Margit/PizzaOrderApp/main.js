@@ -1,12 +1,3 @@
-const getCustomerName = () => {
-    let customerName = document.querySelector('#customerName').value;
-    if (customerName.length === 0) {
-        nameSubmit.textContent = 'What kind of pizza would you like?'
-    } else if (customerName.length != 0) { 
-    nameSubmit.textContent = `What kind of pizza would you like, ${customerName}?`;
-}
-}
-
 const getTotalSum = () => {
     let totalSum = 0, sumToppings = 0, toppingCount = 0;
     const sizeNodeList = document.querySelectorAll('input[type=radio]:checked');
@@ -45,5 +36,5 @@ const getTotalSum = () => {
         }
     }
         totalSum += sumToppings;
-        sumTotal.textContent = `Your total comes to ${totalSum}€`
+        sumTotal.textContent = `Your total comes to ${totalSum}€`;
     }

@@ -23,11 +23,7 @@
             id="customerName"
             placeholder="Enter your name"
           />
-          <button type="button" onclick="getCustomerName()">Submit</button>
         </form>
-        <div id="greeting">
-        <p id="nameSubmit"></p>
-    </div>
       </div>
       <div id="orderSize">
         <form onchange="getTotalSum()">
@@ -159,6 +155,14 @@
             value="Kebab"
           />
           <label for="toppings14">Kebab</label>
+          <br />
+          <input
+            type="checkbox"
+            name="pizzaToppings"
+            id="toppings15"
+            value="Salmon"
+          />
+          <label for="toppings15">Salmon</label>
         </form>
       </div>
       <div id="orderExtra">
@@ -193,6 +197,10 @@
       </div>
       <div id="orderPrice">
         <p id="sumTotal"></p>
+      </div>
+      <form>
+        <button>Place Order</button>
+      </form>
     </div>
     <script src="main.js"></script>
   </body>
