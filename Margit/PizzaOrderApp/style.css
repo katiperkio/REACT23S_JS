@@ -6,15 +6,25 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  padding: 50px 0;
+}
+
+.bg-container {
+  width: 100%;
+  min-height: 100vh;
   background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80);
   background-size: cover;
   background-position: absolute;
   background-attachment: fixed;
-  color: #333;
 }
 
 #container {
-  margin: 50px auto;
+  z-index: 2;
+  margin: 0 auto;
   width: 300px;
   line-height: 20px;
   text-align: left;
