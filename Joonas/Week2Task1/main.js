@@ -172,7 +172,7 @@ console.log(`Two biggest numbers from the numbers you gave are ${nums[0]} and ${
 // 10. Make a program that asks ten numbers. Program calculates and prints out
 //     sum and average, also prints out the smallest and biggest number.
 
-let number;
+/* let number;
 let sum = 0;
 let amount = 0;
 const nums = [];
@@ -186,4 +186,4 @@ for (let i = 0; i < 10; i ++) {
 
 nums.sort(function(a, b) {return a - b});
 console.log(`The sum of the numbers is ${sum} and the average is ${sum/amount}`);
-console.log(`The smallest number is ${nums[0]} and biggest is ${nums[9]}`);
+console.log(`The smallest number is ${nums[0]} and biggest is ${nums[9]}`); */

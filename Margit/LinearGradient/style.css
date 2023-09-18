@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
 }
 
 body {
@@ -16,4 +22,45 @@ form {
   background: white;
   float: left;
   min-height: 100vh;
+  max-width: 350px;
+  text-align: center;
+  padding: 2rem;
+}
+
+h2 {
+  margin: 2rem auto 1rem;
+}
+
+input[type="color"] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  height: 50px;
+}
+
+.colorPicker {
+  display: flex;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  background-color: #eee;
+  margin: 0.5rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.directionPicker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+input[type="radio"]:checked + label {
+  background-color: #333;
+  color: white;
 }
