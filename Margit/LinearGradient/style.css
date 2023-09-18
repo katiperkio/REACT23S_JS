@@ -5,11 +5,15 @@
 }
 
 body {
-  background-image: linear-gradient(
-    90deg,
-    rgb(42, 125, 187),
-    rgb(251, 178, 249)
-  );
+  background-image: linear-gradient(to bottom right, #2a7dbb, #fbb2f9);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+
+form {
+  background: white;
+  float: left;
+  min-height: 100vh;
 }
