@@ -6,6 +6,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #94aea0;
+  font-family: "Varela Round", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+section,
+footer,
+header {
+  padding: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
 }
