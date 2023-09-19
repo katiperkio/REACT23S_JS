@@ -17,9 +17,15 @@ body {
 
 header {
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+}
+
+.bg {
+  background-color: white;
 }
 
 li {
@@ -30,6 +36,10 @@ section,
 footer,
 header {
   padding: 1rem;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 p {
@@ -73,5 +83,17 @@ p {
   }
   .btn {
     padding: 0.5rem;
+  }
+  ul.responsive {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+  }
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
   }
 }
