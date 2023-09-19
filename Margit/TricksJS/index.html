@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Tricks</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>JavaScript Tricks</title>
   </head>
   <body>
     <header>
@@ -18,6 +22,9 @@
         <h1>Kati Perkiö</h1>
       </div>
       <nav>
+        <button class="mobile">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
         <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -263,7 +270,7 @@
     </main>
     <footer id="contact">
       <small>Copyright 2023</small>
-      <button id="backtotop">Back to Top</button>
+      <button class="btn" id="backtotop">Back to Top</button>
     </footer>
     <script src="main.js"></script>
   </body>
