@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  background-color: #94aea0;
+  background-color: #9fc2af;
   font-family: "Varela Round", sans-serif;
+  color: #333;
 }
 
 header {
@@ -54,6 +55,7 @@ p {
   font-family: inherit;
   font-size: inherit;
   background-color: gainsboro;
+  color: #333;
 }
 
 #backtotop {
@@ -63,6 +65,42 @@ p {
   right: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:visited {
+  color: #333;
+}
+
+#logo {
+  font-family: "Ms Madi", cursive;
+  font-size: 22px;
+}
+
+.overlay {
+  background-color: rgba(51, 51, 51, 0.737);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 14ish words in one line is good readability */
+.modal {
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 600px;
+  position: relative;
+}
+
 .mobile {
   display: none;
   background-color: transparent;
@@ -70,10 +108,16 @@ p {
   border: none;
 }
 
+#closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 /* Have media at the end of the css */
 @media (max-width: 820px) {
   body {
-    background-color: pink;
+    background-color: rgb(214, 167, 175);
   }
   nav ul {
     display: none;
