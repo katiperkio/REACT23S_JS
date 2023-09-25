@@ -11,21 +11,16 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    buttonBackTop.style.display = "block";
-  } else {
-    buttonBackTop.style.display = "none";
-  }
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.classList.add("bg");
-  } else {
-    header.classList.remove("bg");
-  }
-}
+const scrollFunction = () => {
+  buttonBackTop.style.display =
+    document.body.scrollTop > 200 || document.documentElement.scrollTop > 200
+      ? "block"
+      : "none";
+
+  document.body.scrollTop > 50 || document.documentElement.scrollTop > 50
+    ? header.classList.add("bg")
+    : header.classList.remove("bg");
+};
 
 const getToTop = () => {
   document.body.scrollTop = 0;
@@ -36,11 +31,9 @@ const mobMenu = () => {
   for (const item of menuItems) {
     item.addEventListener("click", mobMenu);
   }
-  if (navMenu.classList.contains("responsive")) {
-    navMenu.classList.remove("responsive");
-  } else {
-    navMenu.classList.add("responsive");
-  }
+  navMenu.classList.contains("responsive")
+    ? navMenu.classList.remove("responsive")
+    : navMenu.classList.add("responsive");
 };
 
 const modalShow = () => {
