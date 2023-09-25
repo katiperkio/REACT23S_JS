@@ -3,6 +3,9 @@ const mobileButton = document.querySelector(".mobile");
 const navMenu = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("nav ul li a");
 const header = document.querySelector("header");
+const modalButton = document.querySelector("#openModal");
+const overlay = document.querySelector(".overlay");
+const closeButton = document.querySelector("#closeBtn");
 
 window.onscroll = function () {
   scrollFunction();
@@ -40,5 +43,11 @@ const mobMenu = () => {
   }
 };
 
+const modalShow = () => {
+  overlay.classList.toggle("visible");
+};
+
 buttonBackTop.addEventListener("click", getToTop);
 mobileButton.addEventListener("click", mobMenu);
+modalButton.addEventListener("click", modalShow);
+closeButton.addEventListener("click", modalShow);
