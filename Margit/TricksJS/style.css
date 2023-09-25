@@ -41,6 +41,8 @@ header {
 
 section {
   scroll-margin-top: 70px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 p {
